@@ -44,10 +44,6 @@ export const auth = betterAuth({
           throw error;
         }
       },
-    }),
-    captcha({
-      provider: "cloudflare-turnstile",
-      secretKey: process.env.TURNSTILE_SECRET_KEY!,
-    }),
+    })
   ],
 });
